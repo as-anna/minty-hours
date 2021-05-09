@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/minty-hours/static/css/main.ec4a4dd1.chunk.css",
+    "main.js": "/minty-hours/static/js/main.89c48c51.chunk.js",
+    "main.js.map": "/minty-hours/static/js/main.89c48c51.chunk.js.map",
+    "runtime-main.js": "/minty-hours/static/js/runtime-main.12bb1e88.js",
+    "runtime-main.js.map": "/minty-hours/static/js/runtime-main.12bb1e88.js.map",
+    "static/js/2.35053f04.chunk.js": "/minty-hours/static/js/2.35053f04.chunk.js",
+    "static/js/2.35053f04.chunk.js.map": "/minty-hours/static/js/2.35053f04.chunk.js.map",
+    "index.html": "/minty-hours/index.html",
+    "static/css/main.ec4a4dd1.chunk.css.map": "/minty-hours/static/css/main.ec4a4dd1.chunk.css.map",
+    "static/js/2.35053f04.chunk.js.LICENSE.txt": "/minty-hours/static/js/2.35053f04.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12bb1e88.js",
+    "static/js/2.35053f04.chunk.js",
+    "static/css/main.ec4a4dd1.chunk.css",
+    "static/js/main.89c48c51.chunk.js"
+  ]
+}
