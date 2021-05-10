@@ -35,7 +35,7 @@ function NavBar() {
 				{SidebarData.map((item, index) => {
 					return (
 						<li key={index} className={item.cName}>
-							<Link to={item.path}>
+							<Link to={`/minty-hours${item.path}`}>
 								{item.icon}
 								<span>{item.title}</span>
 							</Link>
@@ -45,7 +45,7 @@ function NavBar() {
 
 				{ProjectData.map((project, index) => (
 					<h5 key={index} className={project.cName}>
-						<Link to={`/project/${project.name}`}>{project.name}'s Page</Link>
+						<Link to={`/minty-hours/project/${project.name}`}>{project.name}'s Page</Link>
 					</h5>
 				))}
 			</ul>

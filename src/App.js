@@ -13,11 +13,11 @@ function App() {
 	<Router>
 		<NavBar />
 		<Switch>
-			<Route path='/' exact component={Home} />
-			<Route path='/references' component={References} />
-			<Route path='/test' component={Test} />
-			<Route path='/project/:projId' component={Project} />
-			<Route path='/tags/:tagName' component={Tags} />
+			<Route path='/minty-hours/' exact component={Home} />
+			<Route path='/minty-hours/references' component={References} />
+			<Route path='/minty-hours/test' component={Test} />
+			<Route path='/minty-hours/project/:projId' component={Project} />
+			<Route path='/minty-hours/tags/:tagName' component={Tags} />
 		</Switch>
 	</Router>
     </>
