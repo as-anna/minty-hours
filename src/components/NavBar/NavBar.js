@@ -3,6 +3,7 @@ import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import { SidebarData } from './SidebarData'
+import { ProjectData } from '../../pages/ProjectData'
 import './NavBar.css'
 
 /**
@@ -41,6 +42,12 @@ function NavBar() {
 						</li>
 					)
 				})}
+
+				{ProjectData.map((project, index) => (
+					<h5 key={index} className={project.cName}>
+						<Link to={`/project/${project.name}`}>{project.name}'s Page</Link>
+					</h5>
+				))}
 			</ul>
 		</nav>
 		</>
