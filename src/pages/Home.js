@@ -1,4 +1,5 @@
 import React from 'react'
+import TagList from '../components/TagList/TagList'
 
 function Home() {
 	return (
@@ -15,7 +16,7 @@ function Home() {
 					</div>
 
 					<div className='intro-skills'>
-						tag list
+						<TagList />
 					</div>
 			  </div>
     	</div>
