@@ -1,10 +1,11 @@
 import React from 'react'
 import TagList from '../components/TagList/TagList'
+import { TagData } from '../components/TagList/TagData'
 
 function Home() {
 	return (
 		<div className='home'>
-			  <div className='intro-container'>
+			  	<div className='intro-container content'>
 					<div className='intro-desc'>
 					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget odio venenatis augue pharetra blandit vel vel nisi. Suspendisse lacinia lectus ac turpis condimentum, id consequat enim porttitor. Etiam vulputate molestie porttitor. Vestibulum rutrum blandit libero. Donec auctor ipsum in nisi mattis fermentum. Nunc nisl magna, tristique id pharetra sed, posuere a nisl. Quisque justo enim, venenatis eu odio non, tincidunt euismod arcu.<br/> <br/>
 
@@ -16,9 +17,9 @@ function Home() {
 					</div>
 
 					<div className='intro-skills'>
-						<TagList />
+						<TagList tags={Object.keys(TagData)}/>
 					</div>
-			  </div>
+			  	</div>
     	</div>
 	)
 }

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
 export const TagData = {
-	javascript: [
+	JavaScript: [
 		'proj1', 'proj3'
 	],
-	python: [
+	Python: [
 		'proj2', 'proj3'
 	],
 }

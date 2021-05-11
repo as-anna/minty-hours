@@ -7,7 +7,7 @@ function Project({ match, location }) {
 	} = match;
 
 	return (
-		<div className='project'>
+		<div className='content project'>
       		<h1>Projects under this tag:</h1>
 			{TagData[tagName].map((key, index) => (
 				<div>{key}, </div>

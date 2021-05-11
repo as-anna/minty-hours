@@ -7,9 +7,9 @@
   font-family: 'Lato', sans-serif;
 }
 
-.home,
+.project,
 .test,
-.project {
+.home {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -21,11 +21,11 @@
 .intro-container {
 	max-width: 1000px;
 	min-height: 300px;
-	border-radius: 20px;
-	border-bottom: solid #6d4232 50px;
+	border-radius: 5px;
+	border-bottom: solid #15755a 50px;
 	padding: 30px;
 	margin: 10px;
-	background: #8bccbf;
+	background: #63a79b;
 	display: grid;
 	align-items: center;
 	justify-content: center;
@@ -41,13 +41,44 @@
 	
 }
 
-@media (min-width: 600px) {
+.proj-container {
+	max-width: 1000px;
+	min-height: 300px;
+	border-radius: 5px;
+	border-bottom: solid #15755a 50px;
+	padding: 30px;
+	margin: 10px;
+	background: #63a79b;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-gap: 10px;
+	align-items: start;
+
+	grid-template-areas:
+		"title"
+		"desc"
+		"tags";
+	
+}
+
+@media (min-width: 800px) {
+	.content {
+		margin-left: 260px;
+	}
+
 	.intro-container {
 		grid-template-columns: 1fr;
 
 		grid-template-areas: 
 		"desc img"
 		"desc skills";
+	}
+
+	.proj-container {
+		grid-template-areas:
+		"title title"
+		"desc tags";
 	}
 }
 
@@ -64,4 +95,18 @@
 .intro-skills {
 	background: yellowgreen;
 	grid-area: skills;
+}
+
+.proj-title {
+	font-size: 30px;
+	grid-area: title;
+}
+
+.proj-desc {
+	font-size: 20px;
+	grid-area: desc;
+}
+
+.proj-tags {
+	grid-area: tags;
 }

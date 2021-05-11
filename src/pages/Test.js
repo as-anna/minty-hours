@@ -2,7 +2,7 @@ import React from 'react'
 
 function Test() {
 	return (
-		<div className='test'>
+		<div className='content test'>
       		<h1>Test</h1>
     	</div>
 	)

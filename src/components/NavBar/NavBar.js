@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import * as FaIcons from 'react-icons/fa'
-import * as AiIcons from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import { SidebarData } from './SidebarData'
 import { ProjectData } from '../../pages/ProjectData'
@@ -12,9 +11,17 @@ import './NavBar.css'
  */
 
 function NavBar() {
-	const [sidebar, setSideBar] = useState(false)
+	const [largeWindow, setLargeWindow] = useState(window.innerWidth > 800)
+	const [sidebar, setSideBar] = useState(largeWindow)
 
-	const showSideBar = () => setSideBar(!sidebar)
+	const showSideBar = () => {
+		setSideBar(!sidebar)
+	}
+
+	window.addEventListener('resize', () => {
+		setLargeWindow(window.innerWidth > 800);
+		setSideBar(window.innerWidth > 800)
+	})
 
 	return (
 		<>
@@ -25,11 +32,15 @@ function NavBar() {
 		</div>
 
 		<nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-			<ul className='nav-menu-items' onClick={showSideBar}>
+			<ul className='nav-menu-items' onClick={largeWindow? null : showSideBar}>
 				<li className='navbar-toggle'>
-					<Link to="#" className='menu-bars'>
-						<AiIcons.AiOutlineClose />
-					</Link>
+					{largeWindow ? (
+						<h1 className='menu-bars'>mint!</h1>
+					) : (
+						<Link to="#" className='menu-bars'>
+							<FaIcons.FaBars />
+						</Link>
+					)}
 				</li>
 
 				{SidebarData.map((item, index) => {
@@ -45,7 +56,7 @@ function NavBar() {
 
 				{ProjectData.map((project, index) => (
 					<h5 key={index} className={project.cName}>
-						<Link to={`/minty-hours/project/${project.name}`}>{project.name}'s Page</Link>
+						<Link to={`/minty-hours/project/${project.name}`}>{project.name}</Link>
 					</h5>
 				))}
 			</ul>
