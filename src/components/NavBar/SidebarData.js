@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
-import * as IoIcons from 'react-icons/io'
 
 export const SidebarData = [
 	{
-		title: 'Home',
+		title: 'About Me',
 		path: '/',
-		icon: <AiIcons.AiFillHome />,
+		icon: <AiIcons.AiOutlineUser />,
 		cName: 'nav-text',
 	},
 	{
@@ -16,10 +14,4 @@ export const SidebarData = [
 		icon: <AiIcons.AiFillHome />,
 		cName: 'nav-text',
 	},
-	{
-		title: 'Test',
-		path: '/test',
-		icon: <AiIcons.AiFillHome />,
-		cName: 'nav-text',
-	}
 ]

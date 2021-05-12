@@ -11,9 +11,9 @@ export const ProjectData = [
 	},
 	{
 		name: 'Enstars Team Builder',
-		subname: "Optimized team builder for a mobile game",
-		desc: `A team builder for the mobile game "Ensemble Stars!! Music". Users add which characters and cards they have into a deck, pick a stage/song, and the program builds an optimized team.`,
-		notes: ["First time making my own website. I picked a game I play often because I know the data and score calculation formulas well. It's hosted on GitHub Pages so everything is static. Data is trivial enough so I simply used JSONs to store everything. The data for multiple card copies is lacking so users sometimes have to look up their own stats but once I gather more data I hope to improve the site.", "I update this bimonthly according to the game's new content schedule."],
+		subname: "Optimized team builder for a game",
+		desc: `A team builder for a mobile game I play called "Ensemble Stars!! Music". Users add which characters and cards they have into a deck, pick a stage/song, and the program builds an optimized team.`,
+		notes: ["First time making a website. I picked a game I play often because I know the data and score calculation formulas well. My friends didn't wanna learn how to team build so I tried to make their lives easier by automating it!", "It's hosted on GitHub Pages so everything is static. Data is trivial enough so I simply used JSONs to store everything. The data for multiple card copies is lacking so users sometimes have to look up their own stats but once I gather more data I hope to improve the site.", "I update this bimonthly according to the game's new content schedule."],
 		tags: ['HTML', 'CSS', 'JavaScript', 'Github Pages'],
 		cName: 'nav-text'
 	},
@@ -26,7 +26,7 @@ export const ProjectData = [
 		cName: 'nav-text'
 	},
 	{
-		name: 'Mini Web Search Engine',
+		name: 'Mini Search Engine',
 		subname: "Search engine built from scratch",
 		desc: "A search engine capable of indexing tens of thousands of webpages with a response time under 300ms. It's scope is the UCI domain.",
 		notes: ["Harsh constraints! It was pretty difficult getting it down so much. I used a method that prioritized speed over space because the data pulled didn't end up being too large thanks to good indexing but it'll be a problem if phrase-based indexing should be needed. Phrase-based indexing is superior though so if I were to optimize this more I'd re-do the indexing completely.", "It's a shame but I can't link a running version of this project. It only runs on UCI's own servers because our professor may or may not have crashed the site before by letting her students run so many crawlers at once leading UCI to implement a restriction (lol)."],
@@ -35,7 +35,7 @@ export const ProjectData = [
 	},
 	{
 		name: 'ML Rain Prediction',
-		subname: "Class competition to predict chance of rain",
+		subname: "Competition to predict chance of rain",
 		desc: "Kaggle-hosted competition where data is provided. From the data, predictions must be made by applying classifiers and ensembles.",
 		notes: ["My team placed in the top 10%! What lead to a large part of our success was identifying the perfect library to use for this early on, scikit-learn. It's much less focused on manipulation compared to other libraries but its modelling is fantastic. Simple to implement and thus we were able to focus on trying different ensembles to best predict the data."],
 		tags: ["Python", "Jupyter", "Machine Learning"],
@@ -54,7 +54,7 @@ export const ProjectData = [
 		subname: "Character themed Discord bot",
 		desc: `Discord bot themed after a character from the series "Wonder Cat Kyuu-chan", Oogura. Has a variety of smaller functions including basic server management and time conversion but his main purpose is to take data from other sites and tag my friends and I in my server when there is a new update (episode/chapter) of any series we follow.`,
 		notes: ["Currently inactive. The site's API that I've been using is being revamped completely so I'll have to update this once they finish. Once I can use the API again I want to try running him on a Pi."],
-		tags: ["JavaScript", "Bots", "API"],
+		tags: ["JavaScript", "API"],
 		cName: 'nav-text'
 	},
 ]

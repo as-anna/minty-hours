@@ -7,9 +7,8 @@ function Home() {
 		<div className='home'>
 			  	<div className='intro-container content'>
 					<div className='intro-desc'>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget odio venenatis augue pharetra blandit vel vel nisi. Suspendisse lacinia lectus ac turpis condimentum, id consequat enim porttitor. Etiam vulputate molestie porttitor. Vestibulum rutrum blandit libero. Donec auctor ipsum in nisi mattis fermentum. Nunc nisl magna, tristique id pharetra sed, posuere a nisl. Quisque justo enim, venenatis eu odio non, tincidunt euismod arcu.<br/> <br/>
-
-						Proin porttitor nisi vitae semper sodales. Curabitur at sem nunc. Vivamus nec lacus est. Sed lobortis ullamcorper ligula ut volutpat. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur imperdiet, metus et tincidunt finibus, tortor urna commodo tellus, sed blandit est dui sit amet urna. Quisque viverra viverra dui. Suspendisse lacinia eleifend metus ut sagittis. Integer gravida feugiat massa ut ultricies. Suspendisse vitae facilisis orci. Phasellus pharetra mi neque, quis lobortis mi elementum nec. Aliquam quam massa, posuere eget vestibulum eget, sollicitudin eu elit.</p>
+						<h2>Hi there !</h2><br/>
+					  	<p> I'm Anna Asprer, a graduate from the University of California, Irvine. I majored in Computer Science and graduated as a Magna Cum Laude.<br/><br/>My main field of interest is web development. I'm passionate about the ease of use of websites and wish to learn how to make clean and usable products! Currently I'm self-learning frontend development but I have some knowledge of backend technologies such as MySQL as well.<br/><br/>I built this site to apply new things I pick up about web development here and there as well as some previous projects I've worked on. I add some personal comments and notes along with each project's description as well.<br/><br/>Take a look around! The tags are clickable too!</p>
 					</div>
 
 					<div className='intro-img'>
@@ -17,7 +16,7 @@ function Home() {
 					</div>
 
 					<div className='intro-skills'>
-						<TagList tags={Object.keys(TagData)}/>
+						<TagList tags={TagData.map(function(item) {return item.displayName})}/>
 					</div>
 			  	</div>
     	</div>

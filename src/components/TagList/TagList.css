@@ -1,25 +1,32 @@
 .tag-list {
-	font-size: 20px;
+	font-size: 15px;
 	background-color: #c5dde1;
 	border-radius: 2px;
 	padding: 10px;
 	display: list-item;
 	line-height: 2em;
 	list-style: none;
-	border: solid 1px #405f22;
+	border: solid 4px #15755a;
 }
 
 .tag {
+	font-family: 'Comfortaa', cursive;
+	font-size: 14px;
 	text-decoration: none;
 	color: #c5dde1;
 	background-color: #15755a;
-	margin: 5px;
+	margin: 3px;
 	padding: 3px;
 	border-radius: 5px;
 }
 
+.tag-list a:hover {
+	background: #7e899f;
+	color: #211f20;
+}
+
 @media (min-width: 800px) {
 	.tag-list {
-		max-width: 230px;
+		max-width: 240px;
 	}
 }

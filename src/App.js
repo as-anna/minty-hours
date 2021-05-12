@@ -11,14 +11,25 @@ function App() {
   return (
     <>
 	<Router>
-		<NavBar />
-		<Switch>
-			<Route path='/minty-hours/' exact component={Home} />
-			<Route path='/minty-hours/references' component={References} />
-			<Route path='/minty-hours/test' component={Test} />
-			<Route path='/minty-hours/project/:projId' component={Project} />
-			<Route path='/minty-hours/tags/:tagName' component={Tags} />
-		</Switch>
+		<table className='main'>
+			<thead>
+			<tr>
+				<td><NavBar /></td>
+			</tr>
+			</thead>
+
+			<tbody>
+				<td>
+				<Switch>
+					<Route path='/minty-hours/' exact component={Home} />
+					<Route path='/minty-hours/references' component={References} />
+					<Route path='/minty-hours/test' component={Test} />
+					<Route path='/minty-hours/project/:projId' component={Project} />
+					<Route path='/minty-hours/tags/:tagName' component={Tags} />
+				</Switch>
+				</td>
+			</tbody>
+		</table>
 	</Router>
     </>
   );

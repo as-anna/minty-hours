@@ -12,11 +12,11 @@ function Project({ match, location }) {
 	return (
 		<div className='project'>
 			<div className='content proj-container'>
-				<h1 className='proj-title'>{projId}</h1>
+				<h1 className='proj-title'>{`${projId} - ${project.subname}`}</h1>
 				<p className='proj-desc'>{project.desc}<br/><br/>
 					{(project.notes).map((note) => {
 						return (
-							<p>{note}<br/><br/></p>
+							<div>{note}<br/><br/></div>
 						)
 					})}
 				</p>

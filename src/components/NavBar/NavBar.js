@@ -25,17 +25,17 @@ function NavBar() {
 
 	return (
 		<>
-		<div className="navbar">
+		<header className="navbar">
 			<Link to="#" className="menu-bars">
 				<FaIcons.FaBars onClick={showSideBar}/>
 			</Link>
-		</div>
+		</header>
 
 		<nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
 			<ul className='nav-menu-items' onClick={largeWindow? null : showSideBar}>
 				<li className='navbar-toggle'>
 					{largeWindow ? (
-						<h1 className='menu-bars'>mint!</h1>
+						<h1 className='menu-bars mont'>mint!</h1>
 					) : (
 						<Link to="#" className='menu-bars'>
 							<FaIcons.FaBars />
@@ -54,10 +54,12 @@ function NavBar() {
 					)
 				})}
 
+				<h5 className='nav-text nav-title'>Projects -</h5>
+
 				{ProjectData.map((project, index) => (
-					<h5 key={index} className={project.cName}>
+					<li key={index} className={project.cName}>
 						<Link to={`/minty-hours/project/${project.name}`}>{project.name}</Link>
-					</h5>
+					</li>
 				))}
 			</ul>
 		</nav>
