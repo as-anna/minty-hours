@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/minty-hours/static/css/main.420e8e68.chunk.css",
-    "main.js": "/minty-hours/static/js/main.383fb4ae.chunk.js",
-    "main.js.map": "/minty-hours/static/js/main.383fb4ae.chunk.js.map",
+    "main.css": "/minty-hours/static/css/main.8e5d7b82.chunk.css",
+    "main.js": "/minty-hours/static/js/main.9abdff6b.chunk.js",
+    "main.js.map": "/minty-hours/static/js/main.9abdff6b.chunk.js.map",
     "runtime-main.js": "/minty-hours/static/js/runtime-main.12bb1e88.js",
     "runtime-main.js.map": "/minty-hours/static/js/runtime-main.12bb1e88.js.map",
-    "static/js/2.7209d09d.chunk.js": "/minty-hours/static/js/2.7209d09d.chunk.js",
-    "static/js/2.7209d09d.chunk.js.map": "/minty-hours/static/js/2.7209d09d.chunk.js.map",
+    "static/js/2.8a8990af.chunk.js": "/minty-hours/static/js/2.8a8990af.chunk.js",
+    "static/js/2.8a8990af.chunk.js.map": "/minty-hours/static/js/2.8a8990af.chunk.js.map",
     "index.html": "/minty-hours/index.html",
-    "static/css/main.420e8e68.chunk.css.map": "/minty-hours/static/css/main.420e8e68.chunk.css.map",
-    "static/js/2.7209d09d.chunk.js.LICENSE.txt": "/minty-hours/static/js/2.7209d09d.chunk.js.LICENSE.txt"
+    "static/css/main.8e5d7b82.chunk.css.map": "/minty-hours/static/css/main.8e5d7b82.chunk.css.map",
+    "static/js/2.8a8990af.chunk.js.LICENSE.txt": "/minty-hours/static/js/2.8a8990af.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/minty-hours/static/media/mints.a7d92180.png"
   },
   "entrypoints": [
     "static/js/runtime-main.12bb1e88.js",
-    "static/js/2.7209d09d.chunk.js",
-    "static/css/main.420e8e68.chunk.css",
-    "static/js/main.383fb4ae.chunk.js"
+    "static/js/2.8a8990af.chunk.js",
+    "static/css/main.8e5d7b82.chunk.css",
+    "static/js/main.9abdff6b.chunk.js"
   ]
 }
