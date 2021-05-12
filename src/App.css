@@ -16,6 +16,10 @@ html {
 body {
 	background: #96acbe;
 	height: inherit;
+	background-image: url('./mints.png');
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: 20%;
 }
 
 .project,
@@ -182,4 +186,9 @@ img {
   	margin-right: auto;
 	border-radius: 7px;
 	border: solid 10px #15755a;
+}
+
+#avatar {
+	content: url('./avatar.jpg');
+	max-width: 200px;
 }

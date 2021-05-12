@@ -12,7 +12,7 @@ function Home() {
 					</div>
 
 					<div className='intro-img'>
-					  <img src={"https://minters.carrd.co/assets/images/gallery01/0d6a8947.jpg?v=2a01b3d9"} alt={"Me but not me"} />
+					  <img id='avatar' alt={"Me but not me"} />
 					</div>
 
 					<div className='intro-skills'>
