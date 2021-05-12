@@ -19,7 +19,7 @@ function App() {
 			</thead>
 
 			<tbody>
-				<td>
+				<tr><td>
 				<Switch>
 					<Route path='/minty-hours/' exact component={Home} />
 					<Route path='/minty-hours/references' component={References} />
@@ -27,7 +27,7 @@ function App() {
 					<Route path='/minty-hours/project/:projId' component={Project} />
 					<Route path='/minty-hours/tags/:tagName' component={Tags} />
 				</Switch>
-				</td>
+				</td></tr>
 			</tbody>
 		</table>
 	</Router>

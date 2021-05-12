@@ -33,7 +33,7 @@ function NavBar() {
 
 		<nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
 			<ul className='nav-menu-items' onClick={largeWindow? null : showSideBar}>
-				<li className='navbar-toggle'>
+				<li className='navbar-toggle' key='mint'>
 					{largeWindow ? (
 						<h1 className='menu-bars mont'>mint!</h1>
 					) : (
@@ -45,7 +45,7 @@ function NavBar() {
 
 				{SidebarData.map((item, index) => {
 					return (
-						<li key={index} className={item.cName}>
+						<li key={item.title} className={item.cName}>
 							<Link to={`/minty-hours${item.path}`}>
 								{item.icon}
 								<span>{item.title}</span>
@@ -57,7 +57,7 @@ function NavBar() {
 				<h5 className='nav-text nav-title'>Projects -</h5>
 
 				{ProjectData.map((project, index) => (
-					<li key={index} className={project.cName}>
+					<li key={project.name} className={project.cName}>
 						<Link to={`/minty-hours/project/${project.name}`}>{project.name}</Link>
 					</li>
 				))}

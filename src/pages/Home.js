@@ -8,7 +8,7 @@ function Home() {
 			  	<div className='intro-container content'>
 					<div className='intro-desc'>
 						<h2>Hi there !</h2><br/>
-					  	<p> I'm Anna Asprer, a graduate from the University of California, Irvine. I majored in Computer Science and graduated as a Magna Cum Laude.<br/><br/>My main field of interest is web development. I'm passionate about the ease of use of websites and wish to learn how to make clean and usable products! Currently I'm self-learning frontend development but I have some knowledge of backend technologies such as MySQL as well.<br/><br/>I built this site to apply new things I pick up about web development here and there as well as some previous projects I've worked on. I add some personal comments and notes along with each project's description as well.<br/><br/>Take a look around! The tags are clickable too!</p>
+					  	<p className='inner'> I'm Anna Asprer, a graduate from the University of California, Irvine. I majored in Computer Science and graduated as a Magna Cum Laude.<br/><br/>My main field of interest is web development. I'm passionate about the ease of use of websites and wish to learn how to make clean and usable products! Currently I'm self-learning frontend development but I have some knowledge of backend technologies such as MySQL as well.<br/><br/>I built this site to apply new things I pick up about web development here and there as well as some previous projects I've worked on. I add some personal comments and notes along with each project's description as well.<br/><br/>Take a look around! The tags are clickable too!</p>
 					</div>
 
 					<div className='intro-img'>

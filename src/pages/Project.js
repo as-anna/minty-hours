@@ -13,13 +13,13 @@ function Project({ match, location }) {
 		<div className='project'>
 			<div className='content proj-container'>
 				<h1 className='proj-title'>{`${projId} - ${project.subname}`}</h1>
-				<p className='proj-desc'>{project.desc}<br/><br/>
-					{(project.notes).map((note) => {
+				<div className='proj-desc inner'>{project.desc}<br/><br/>
+					{(project.notes).map((note, index) => {
 						return (
-							<div>{note}<br/><br/></div>
+							<div key={index}>{note}<br/><br/></div>
 						)
 					})}
-				</p>
+				</div>
 				<div className='proj-tags'><TagList tags={project.tags}/></div>
 			</div>
     	</div>

@@ -167,7 +167,7 @@ h2 {
 	font-family: 'Roboto', sans-serif;
 }
 
-p {
+.inner {
 	background: #c5dde1;
 	border-radius: 4px;
 	border: solid 4px #15755a;

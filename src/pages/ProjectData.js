@@ -1,12 +1,26 @@
-import React, { useState } from 'react'
-
 export const ProjectData = [
+	{
+		name: 'Minty Hours',
+		subname: "Website for myself :)",
+		desc: "You're already here! A place to further comment and reflect on the various projects I've started. It's mint themed because I enjoy both the flavor and color. It's often my handle in games and online!",
+		notes: ["Wanted to apply my newfound ReactJS knowledge so I made this. Planning to keep improving it over time but right now I'm proudest of the tag system. And dynamic paging is incredibly powerful."],
+		tags: ["HTML", "CSS", "JavaScript", "ReactJS", "Github Pages"],
+		cName: 'nav-text'
+	},
 	{
 		name: 'Transfusion',
 		subname: "2D platformer made on Unity",
 		desc: "Transfusion is a 2D platformer game in which the player controls a child that wields a huge syringe as their weapon. The child is constantly losing HP as a consequence of rituals performed upon them in the past that went bad, and the only way to regenerate health is to extract blood from demons with the syringe and inject it into their body.",
 		notes: ["A group project for a game design class! My first time using Unity and C#. I was in charge of writing the story, game mechanics, design documentation, initial character design, choosing plus implementing art/sound assets, and coding the sound and scene managers in-game. We only finished one level for the class but I hope to expand on this concept more one day."],
 		tags: ['Unity', 'C#'],
+		cName: 'nav-text'
+	},
+	{
+		name: 'Mini Search Engine',
+		subname: "Search engine built from scratch",
+		desc: "A search engine capable of indexing tens of thousands of webpages with a response time under 300ms. It's scope is the UCI domain.",
+		notes: ["Harsh constraints! It was pretty difficult getting it down so much. I used a method that prioritized speed over space because the data pulled didn't end up being too large thanks to good indexing but it'll be a problem if phrase-based indexing should be needed. Phrase-based indexing is superior though so if I were to optimize this more I'd re-do the indexing completely.", "It's a shame but I can't link a running version of this project. It only runs on UCI's own servers because our professor may or may not have crashed the site before by letting her students run so many crawlers at once leading UCI to implement a restriction (lol)."],
+		tags: ["Python", "Search Engine Optimization"],
 		cName: 'nav-text'
 	},
 	{
@@ -26,27 +40,11 @@ export const ProjectData = [
 		cName: 'nav-text'
 	},
 	{
-		name: 'Mini Search Engine',
-		subname: "Search engine built from scratch",
-		desc: "A search engine capable of indexing tens of thousands of webpages with a response time under 300ms. It's scope is the UCI domain.",
-		notes: ["Harsh constraints! It was pretty difficult getting it down so much. I used a method that prioritized speed over space because the data pulled didn't end up being too large thanks to good indexing but it'll be a problem if phrase-based indexing should be needed. Phrase-based indexing is superior though so if I were to optimize this more I'd re-do the indexing completely.", "It's a shame but I can't link a running version of this project. It only runs on UCI's own servers because our professor may or may not have crashed the site before by letting her students run so many crawlers at once leading UCI to implement a restriction (lol)."],
-		tags: ["Python", "Search Engine Optimization"],
-		cName: 'nav-text'
-	},
-	{
 		name: 'ML Rain Prediction',
-		subname: "Competition to predict chance of rain",
+		subname: "Predict rain from sample data",
 		desc: "Kaggle-hosted competition where data is provided. From the data, predictions must be made by applying classifiers and ensembles.",
 		notes: ["My team placed in the top 10%! What lead to a large part of our success was identifying the perfect library to use for this early on, scikit-learn. It's much less focused on manipulation compared to other libraries but its modelling is fantastic. Simple to implement and thus we were able to focus on trying different ensembles to best predict the data."],
 		tags: ["Python", "Jupyter", "Machine Learning"],
-		cName: 'nav-text'
-	},
-	{
-		name: 'Minty Hours',
-		subname: "Website for myself :)",
-		desc: "You're here! A place to further comment and reflect on the various projects I've started. It's mint themed because I enjoy both the flavor and color. It's often my handle in games and online!",
-		notes: ["Wanted to apply my newfound ReactJS knowledge so I made this. Planning to keep improving it over time but right now I'm proudest of the tag system. And dynamic paging is incredibly powerful."],
-		tags: ["HTML", "CSS", "JavaScript", "ReactJS"],
 		cName: 'nav-text'
 	},
 	{

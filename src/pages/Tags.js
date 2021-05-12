@@ -6,9 +6,8 @@ function Project({ match, location }) {
 	const {
 		params: { tagName }
 	} = match;
-	console.log(tagName);
+	
 	const tag = TagData.find((tag) => tag.name === tagName);
-	console.log(tag)
 
 	return (
 		<div className='ptags'>
@@ -16,9 +15,9 @@ function Project({ match, location }) {
 				<div>
 					<h2>{tag.displayName} Projects</h2><br/>
 				</div>
-				<p className='ptags-proj'>
+				<p className='ptags-proj inner'>
 					{(tag.projs).map((proj) => (
-                        <li>
+                        <li key={proj}>
                             <Link to={`/minty-hours/project/${proj}`}>{proj}</Link>
                         </li>
                     ))}

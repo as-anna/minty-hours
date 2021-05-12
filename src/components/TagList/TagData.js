@@ -1,5 +1,3 @@
-import React, { useState } from 'react'
-
 export const TagData = [
 	{
 		name: 'JavaScript',
@@ -47,7 +45,7 @@ export const TagData = [
 		name: 'GitPages',
 		displayName: 'Github Pages',
 		projs: [
-			'Enstars Team Builder',
+			'Enstars Team Builder', 'Minty Hours'
 		]
 	},
 	{
