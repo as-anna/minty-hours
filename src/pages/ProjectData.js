@@ -5,7 +5,7 @@ export const ProjectData = [
 		link: 'https://as-anna.github.io/minty-hours/',
 		desc: "You're already here! A place to further comment and reflect on the various projects I've started. It's mint themed because I enjoy both the flavor and color. It's often my handle in games and online!",
 		notes: ["Wanted to apply my newfound ReactJS knowledge so I made this. Planning to keep improving it over time but right now I'm proudest of the tag system. And dynamic paging is incredibly powerful."],
-		images: [],
+		images: ['pocky'],
 		tags: ["HTML", "CSS", "JavaScript", "ReactJS", "Github Pages"],
 		cName: 'nav-text'
 	},
@@ -32,30 +32,30 @@ export const ProjectData = [
 	{
 		name: 'Enstars Team Builder',
 		subname: "Optimized team builder for a game",
-		link: '',
+		link: 'https://as-anna.github.io/enstars-team-build/index.html',
 		desc: `A team builder for a mobile game I play called "Ensemble Stars!! Music". Users add which characters and cards they have into a deck, pick a stage/song, and the program builds an optimized team.`,
 		notes: ["First time making a website. I picked a game I play often because I know the data and score calculation formulas well. My friends didn't wanna learn how to team build so I tried to make their lives easier by automating it!", "It's hosted on GitHub Pages so everything is static. Data is trivial enough so I simply used JSONs to store everything. The data for multiple card copies is lacking so users sometimes have to look up their own stats but once I gather more data I hope to improve the site.", "I update this bimonthly according to the game's new content schedule."],
-		images: [],
+		images: ['addcards', 'editcard', 'build', 'export'],
 		tags: ['HTML', 'CSS', 'JavaScript', 'Github Pages'],
 		cName: 'nav-text'
 	},
 	{
 		name: 'Wumpus World AI',
 		subname: "Avoid the wumpus! Get the gold!",
-		link: '',
+		link: 'https://github.com/as-anna/wumpus-world',
 		desc: "A maze-solving esque AI. Wumpus World's objective is to traverse a cave in the dark, looking for gold but avoiding the terrifying wumpus! This AI aims to get as many points as possible from a simulated 20,000 unique maps.",
 		notes: ["I didn't think probability was almost equally as important as a bactracking algorithm. My teammate and I have a build implementing backtracking without too much thought on probability and another with great probability calculation and mediocre backtracking. It's hilarious but the latter got a higher score.", "Anyways, my teammate and I got to the minimum score for the AI fairly quickly and spent a lot of time tinkering and optimizing later. Figuring out the logic was my part and then my teammate wrote the code as I backseat gamer'd them. I mean. Pair programming. I finished up the project by doing the debugging. Overall a fun experience! Good teammates make a difference."],
-		images: [],
+		images: ['examplemap'],
 		tags: ['C++', 'Artificial Intelligence'],
 		cName: 'nav-text'
 	},
 	{
 		name: 'ML Rain Prediction',
 		subname: "Predict rain from sample data",
-		link: '',
+		link: 'https://drive.google.com/file/d/1nhOVDaPuU1-9s3oQyP6nV5w8t4zXYQar/view',
 		desc: "Kaggle-hosted competition where data is provided. From the data, predictions must be made by applying classifiers and ensembles.",
 		notes: ["My team placed in the top 10%! What lead to a large part of our success was identifying the perfect library to use for this early on, scikit-learn. It's much less focused on manipulation compared to other libraries but its modelling is fantastic. Simple to implement and thus we were able to focus on trying different ensembles to best predict the data."],
-		images: [],
+		images: ['performance'],
 		tags: ["Python", "Jupyter", "Machine Learning"],
 		cName: 'nav-text'
 	},
@@ -65,7 +65,7 @@ export const ProjectData = [
 		link: '',
 		desc: `Discord bot themed after a character from the series "Wonder Cat Kyuu-chan", Oogura. Has a variety of smaller functions including basic server management and time conversion but his main purpose is to take data from other sites and tag my friends and I in my server when there is a new update (episode/chapter) of any series we follow.`,
 		notes: ["Currently inactive. The site's API that I've been using is being revamped completely so I'll have to update this once they finish. Once I can use the API again I want to try running him on a Pi."],
-		images: [],
+		images: ['asearch', 'msearch', 'logging', 'ava'],
 		tags: ["JavaScript", "API"],
 		cName: 'nav-text'
 	},
