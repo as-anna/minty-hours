@@ -24,9 +24,3 @@
 	background: #7e899f;
 	color: #211f20;
 }
-
-@media (min-width: 800px) {
-	.tag-list {
-		max-width: 240px;
-	}
-}

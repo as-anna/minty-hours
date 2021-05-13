@@ -107,7 +107,7 @@ tbody {
 	}
 
 	.intro-container {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 25%;
 
 		grid-template-areas: 
 		"desc img"
@@ -115,10 +115,16 @@ tbody {
 	}
 
 	.proj-container {
+		grid-template-columns: 1fr 25%;
+
 		grid-template-areas:
 		"title title"
 		"images images"
 		"desc tags";
+	}
+
+	#avatar {
+		max-width: 100%;
 	}
 }
 
@@ -156,6 +162,9 @@ tbody {
 }
 
 .proj-images {
+	align-items: center;
+	margin: 0 auto;
+	justify-content: center;
 	grid-area: images;
 }
 
@@ -207,5 +216,5 @@ img {
 
 #avatar {
 	content: url('./avatar.jpg');
-	max-width: 200px;
+	width: 200px;
 }

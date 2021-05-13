@@ -1,8 +1,7 @@
 import React from 'react'
 import { ProjectData } from './ProjectData'
 import TagList from '../components/TagList/TagList'
-import Carousel, { slidesToShowPlugin, slidesToScrollPlugin } from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css'; 
+var Carousel = require('react-responsive-carousel').Carousel;
 
 function Project({ match, location }) {
 	const {
@@ -16,33 +15,15 @@ function Project({ match, location }) {
 			<div className='content proj-container'>
 				<h1 id='proj-title' className='proj-title'>{`${projId} - ${project.subname}`}</h1>
 				
-				<div className='proj-images' style={{ width: (window.innerWidth > 800) ? 'calc(88vw - 250px)' : '85vw' , position: 'relative'}}>
-					<Carousel
-						plugins={[
-							'centered',
-							'infinite',
-							'arrows',
-							{
-							resolve: slidesToShowPlugin,
-							options: {
-							numberOfSlides: Math.min(window.innerWidth/800, 1),
-							},
-							},
-							{
-							resolve: slidesToScrollPlugin,
-							options: {
-							numberOfSlides: 1,
-							},
-							},
-						]}   
-					>
-
+				<div className='proj-images'>
+					<Carousel showThumbs={false} centerMode={false}>
 						{(project.images).map((image, index) => {
 							return (
-								<img src={`https://github.com/as-anna/minty-hours/blob/main/src/proj-images/${projId}/${image}.jpg?raw=true`} alt={image} height='300px' key={index}/>
+								<div key={toString(index) + "div"}>
+									<img src={`https://github.com/as-anna/minty-hours/blob/main/src/proj-images/${projId}/${image}.jpg?raw=true`} alt={image} key={index} style={{objectFit: 'contain', width: '100%', height: '300px'}}/>
+								</div>
 							)
 						})}
-						
 					</Carousel>
 				</div>
 
