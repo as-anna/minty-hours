@@ -10,7 +10,7 @@ import Tags from './pages/Tags'
 function App() {
   return (
     <>
-	<Router basename='/minty-hours'>
+	<Router>
 		<table className='main'>
 			<thead>
 			<tr>
@@ -21,10 +21,10 @@ function App() {
 			<tbody>
 				<tr><td>
 				<Switch>
-					<Route path='/' exact component={Home} />
-					<Route path='/references' component={References} />
-					<Route path='/project/:projId' component={Project} />
-					<Route path='/tags/:tagName' component={Tags} />
+					<Route path='/minty-hours/' exact component={Home} />
+					<Route path='/minty-hours/references' component={References} />
+					<Route path='/minty-hours/project/:projId' component={Project} />
+					<Route path='/minty-hours/tags/:tagName' component={Tags} />
 				</Switch>
 				</td></tr>
 			</tbody>

@@ -18,7 +18,7 @@ function References() {
 						<a href={`https://www.youtube.com/watch?v=CXa0f4-dWi4&t=493s`}>A Great SideNav Tutorial</a>
 					</li>
 					<li>
-						<a href={`https://github.com/brainhubeu/react-carousel`}>Image Carousel Component</a>
+						<a href={`https://www.npmjs.com/package/react-responsive-carousel`}>Image Carousel Component</a>
 					</li>
 				</p>
 			</div>
