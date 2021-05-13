@@ -24,6 +24,7 @@ body {
 
 .project,
 .ptags,
+.references,
 .home {
   	height: 100vh;
 	padding-top: 80px;
