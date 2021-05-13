@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/minty-hours/static/css/main.3f1126bf.chunk.css",
-    "main.js": "/minty-hours/static/js/main.5891529b.chunk.js",
-    "main.js.map": "/minty-hours/static/js/main.5891529b.chunk.js.map",
+    "main.js": "/minty-hours/static/js/main.0e843496.chunk.js",
+    "main.js.map": "/minty-hours/static/js/main.0e843496.chunk.js.map",
     "runtime-main.js": "/minty-hours/static/js/runtime-main.12bb1e88.js",
     "runtime-main.js.map": "/minty-hours/static/js/runtime-main.12bb1e88.js.map",
     "static/css/2.6b560088.chunk.css": "/minty-hours/static/css/2.6b560088.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.6b560088.chunk.css",
     "static/js/2.5e78a66a.chunk.js",
     "static/css/main.3f1126bf.chunk.css",
-    "static/js/main.5891529b.chunk.js"
+    "static/js/main.0e843496.chunk.js"
   ]
 }
