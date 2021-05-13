@@ -8,7 +8,7 @@ const TagList = (props) => {
 		<div>
 			<div className="tag-list">
 				{(props.tags).map((key, index) => (
-					<Link to={`/minty-hours/tags/${TagData.find((tag) => tag.displayName === key).name}`} className='tag' key={index}>{key} </Link>
+					<Link to={`/tags/${TagData.find((tag) => tag.displayName === key).name}`} className='tag' key={index}>{key} </Link>
 				))}
 			</div>
 		</div>

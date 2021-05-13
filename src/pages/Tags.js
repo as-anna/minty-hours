@@ -18,7 +18,7 @@ function Project({ match, location }) {
 				<p className='ptags-proj inner'>
 					{(tag.projs).map((proj) => (
                         <li key={proj}>
-                            <Link to={`/minty-hours/project/${proj}`}>{proj}</Link>
+                            <Link to={`/project/${proj}`}>{proj}</Link>
                         </li>
                     ))}
 				</p>
