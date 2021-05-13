@@ -1,6 +1,8 @@
 import React from 'react'
 import { ProjectData } from './ProjectData'
 import TagList from '../components/TagList/TagList'
+import Carousel, { slidesToShowPlugin, slidesToScrollPlugin } from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css'; 
 
 function Project({ match, location }) {
 	const {
@@ -12,7 +14,39 @@ function Project({ match, location }) {
 	return (
 		<div className='project'>
 			<div className='content proj-container'>
-				<h1 className='proj-title'>{`${projId} - ${project.subname}`}</h1>
+				<h1 id='proj-title' className='proj-title'>{`${projId} - ${project.subname}`}</h1>
+				
+				<div className='proj-images' style={{ width: (window.innerWidth > 800) ? 'calc(90vw - 250px)' : '85vw' , position: 'relative'}}>
+					<Carousel
+						plugins={[
+							'centered',
+							'infinite',
+							'arrows',
+							{
+							resolve: slidesToShowPlugin,
+							options: {
+							numberOfSlides: Math.min(window.innerWidth/800, 1),
+							},
+							},
+							{
+							resolve: slidesToScrollPlugin,
+							options: {
+							numberOfSlides: 1,
+							},
+							},
+						]}   
+					>
+
+						{(project.images).map((image, index) => {
+							console.log(image)
+							return (
+								<img src={`https://github.com/as-anna/minty-hours/blob/main/src/proj-images/${projId}/${image}.jpg?raw=true`} alt={image} height='250px' key={index}/>
+							)
+						})}
+						
+					</Carousel>
+				</div>
+
 				<div className='proj-desc inner'>{project.desc}<br/><br/>
 					{(project.notes).map((note, index) => {
 						return (

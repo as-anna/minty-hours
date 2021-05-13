@@ -3,6 +3,7 @@
 	height: 80px;
 	display: flex;
 	position: fixed;
+	z-index: 1;
 	justify-content: flex-start;
 	align-items: center;
 	top: 0;
@@ -30,6 +31,7 @@
 	top: 0;
 	left: -100%;
 	transition: 850ms;
+	z-index: 2;
 }
   
 .nav-menu.active {

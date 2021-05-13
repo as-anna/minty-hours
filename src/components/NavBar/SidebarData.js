@@ -11,7 +11,7 @@ export const SidebarData = [
 	{
 		title: 'References',
 		path: '/references',
-		icon: <AiIcons.AiFillHome />,
+		icon: <AiIcons.AiFillFolderOpen />,
 		cName: 'nav-text',
 	},
 ]

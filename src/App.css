@@ -84,6 +84,7 @@ tbody {
 
 	grid-template-areas:
 		"title"
+		"images"
 		"desc"
 		"tags";
 	
@@ -115,6 +116,7 @@ tbody {
 	.proj-container {
 		grid-template-areas:
 		"title title"
+		"images images"
 		"desc tags";
 	}
 }
@@ -150,6 +152,10 @@ tbody {
 
 .proj-tags {
 	grid-area: tags;
+}
+
+.proj-images {
+	grid-area: images;
 }
 
 .ptags-proj {
