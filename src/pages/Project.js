@@ -16,7 +16,7 @@ function Project({ match, location }) {
 			<div className='content proj-container'>
 				<h1 id='proj-title' className='proj-title'>{`${projId} - ${project.subname}`}</h1>
 				
-				<div className='proj-images' style={{ width: (window.innerWidth > 800) ? 'calc(90vw - 250px)' : '85vw' , position: 'relative'}}>
+				<div className='proj-images' style={{ width: (window.innerWidth > 800) ? 'calc(88vw - 250px)' : '85vw' , position: 'relative'}}>
 					<Carousel
 						plugins={[
 							'centered',
@@ -40,7 +40,7 @@ function Project({ match, location }) {
 						{(project.images).map((image, index) => {
 							console.log(image)
 							return (
-								<img src={`https://github.com/as-anna/minty-hours/blob/main/src/proj-images/${projId}/${image}.jpg?raw=true`} alt={image} height='250px' key={index}/>
+								<img src={`https://github.com/as-anna/minty-hours/blob/main/src/proj-images/${projId}/${image}.jpg?raw=true`} alt={image} height='300px' key={index}/>
 							)
 						})}
 						
@@ -54,7 +54,10 @@ function Project({ match, location }) {
 						)
 					})}
 				</div>
-				<div className='proj-tags'><TagList tags={project.tags}/></div>
+				<div className='proj-tags'>
+					<div><a className='link' href={project.link}>Link</a></div>
+					<TagList tags={project.tags}/>
+				</div>
 			</div>
     	</div>
 	)

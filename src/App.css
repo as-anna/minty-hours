@@ -162,6 +162,16 @@ tbody {
 	font-size: 20px;
 }
 
+a {
+	font-family: 'Comfortaa', cursive;
+	text-decoration: underline;
+	color: #15755a;
+}
+
+a:hover {
+	color: blue;
+}
+
 h2 {
 	background: #15755a;
 	border-radius: 10px;
