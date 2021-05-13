@@ -38,7 +38,6 @@ function Project({ match, location }) {
 					>
 
 						{(project.images).map((image, index) => {
-							console.log(image)
 							return (
 								<img src={`https://github.com/as-anna/minty-hours/blob/main/src/proj-images/${projId}/${image}.jpg?raw=true`} alt={image} height='300px' key={index}/>
 							)
